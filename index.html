@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TemplateHub - Premium Website Templates Marketplace</title>
+  <meta name="description" content="Discover premium HTML, CSS, and JavaScript website templates. Modern, responsive, and ready to deploy.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="shortcut icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Floating Background Orbs Container -->
+  <div class="orbs-container">
+    <div class="floating-orb orb-1" data-speed="0.3"></div>
+    <div class="floating-orb orb-2" data-speed="0.5"></div>
+    <div class="floating-orb orb-3" data-speed="0.4"></div>
+  </div>
+  
+  <!-- Scroll Gradient Overlay -->
+  <div class="scroll-gradient-overlay" id="scroll-overlay"></div>
+  
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-content">
+        <a href="index.html" class="nav-logo text-gradient">
+          <img src="assets/logo.png" alt="TemplateHub Logo" class="nav-logo-img">
+          <span>TemplateHub</span>
+        </a>
+        
+        <!-- Desktop Menu -->
+        <div class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="#templates">Templates</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <div class="theme-toggle">
+            <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Theme switcher">
+              <span id="theme-icon">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                </svg>
+              </span>
+              <span id="theme-text">Dark</span>
+              <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="theme-toggle-menu" id="theme-menu">
+              <div class="theme-option" data-theme="light">
+                <span class="theme-option-icon">
+                  <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                  </svg>
+                </span>
+                <span>Bright</span>
+              </div>
+              <div class="theme-option" data-theme="dark">
+                <span class="theme-option-icon">
+                  <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                  </svg>
+                </span>
+                <span>Dark</span>
+              </div>
+            </div>
+          </div>
+          <a href="#bundle" class="nav-btn">Bundle Deal</a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="#templates">Templates</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <div class="theme-toggle" style="margin: 1rem 0;">
+          <button class="theme-toggle-btn" id="theme-toggle-btn-mobile" aria-label="Theme switcher" style="width: 100%; justify-content: center;">
+            <span id="theme-icon-mobile">
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+              </svg>
+            </span>
+            <span id="theme-text-mobile">Dark</span>
+            <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="theme-toggle-menu" id="theme-menu-mobile" style="position: relative; top: 0; left: 0; right: 0; margin-top: 0.5rem;">
+            <div class="theme-option" data-theme="light">
+              <span class="theme-option-icon">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </span>
+              <span>Bright</span>
+            </div>
+            <div class="theme-option" data-theme="dark">
+              <span class="theme-option-icon">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                </svg>
+              </span>
+              <span>Dark</span>
+            </div>
+          </div>
+        </div>
+        <a href="#bundle" class="nav-btn" style="display: block; text-align: center; margin-top: 1rem;">Bundle Deal</a>
+      </div>
+    </div>
+  </nav>
+
+  <main style="position: relative; z-index: 1;">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="text-gradient">TemplateHub</h1>
+        <p>Premium Website Templates for Modern Businesses</p>
+        <div class="hero-buttons">
+          <a href="#templates" class="btn-primary glow-cyan">Browse Templates</a>
+          <a href="blog.html" class="btn-secondary">Read Blog</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Templates Grid -->
+    <section id="templates" class="templates-section">
+      <div class="container">
+        <h2 class="section-title text-gradient">Our Templates</h2>
+        <p class="section-subtitle">Choose from our collection of premium and free templates</p>
+
+        <!-- Loading State -->
+        <div id="templates-loading" class="loading">
+          <div class="spinner"></div>
+          <p style="margin-top: 1rem; color: var(--gray-400);">Loading templates...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="templates-error" class="error" style="display: none;">
+          <p></p>
+          <button onclick="window.location.reload()" class="btn-primary">Refresh Page</button>
+        </div>
+
+        <!-- Templates Container -->
+        <div id="templates-container" class="templates-grid" style="display: none;"></div>
+      </div>
+    </section>
+
+    <!-- Bundle CTA -->
+    <section id="bundle" class="bundle-section">
+      <div class="bundle-content">
+        <h2 class="section-title text-gradient">Get All Templates Bundle</h2>
+        <p class="bundle-description" style="font-size: 1.25rem; margin-bottom: 2rem;">
+          Get all premium templates at an unbeatable price. Save 60% when you buy the bundle!
+        </p>
+        <div class="bundle-card">
+          <div class="bundle-price text-gradient">$59</div>
+          <p style="color: var(--gray-400); margin-bottom: 1.5rem;">All 6 Premium Templates</p>
+          <ul class="bundle-list">
+            <li>✓ Business Agency Template</li>
+            <li>✓ Business Startup Template</li>
+            <li>✓ Call Center Support Template</li>
+            <li>✓ E-Commerce Premium Template</li>
+            <li>✓ E-Commerce Luxury Template</li>
+            <li>✓ Business Portfolio (Free Bonus)</li>
+          </ul>
+          <a href="https://buy.stripe.com/test_bundle" target="_blank" rel="noopener noreferrer" class="btn-primary glow-cyan">Buy Bundle Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3 class="text-gradient">TemplateHub</h3>
+          <p>Premium website templates for modern businesses. Start your online presence today.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Templates</h4>
+          <ul>
+            <li><a href="template-detail.html?id=business-agency">Business Agency</a></li>
+            <li><a href="template-detail.html?id=business-startup">Business Startup</a></li>
+            <li><a href="template-detail.html?id=ecommerce-premium">E-Commerce</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#bundle">Bundle Deal</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">License</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> TemplateHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Preview Modal -->
+  <div id="preview-modal" class="modal">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3 id="modal-title">Template Preview</h3>
+        <div class="modal-actions">
+          <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">
+            🔗 Open in New Tab
+          </a>
+          <button onclick="closePreview()" style="padding: 0.5rem 1rem; background: rgba(220, 38, 38, 0.8); color: white; border-radius: 0.5rem; border: none; cursor: pointer; font-weight: 600; font-size: 0.875rem;">Close</button>
+        </div>
+      </div>
+      <iframe id="modal-iframe" class="modal-iframe" title="Template Preview"></iframe>
+    </div>
+  </div>
+
+  <!-- Embedded Templates Data (works without server) -->
+  <script>
+    // Templates data embedded for offline use
+    window.templatesData = [
+      {
+        "id": "business-agency",
+        "title": "Business Agency Template",
+        "type": "paid",
+        "theme": "black",
+        "price": 29,
+        "tags": ["HTML", "CSS", "JavaScript", "Business", "Agency"],
+        "preview": "/images/business-agency.jpg",
+        "demo": "templates/business-agency/index.html",
+        "buyLink": "https://buy.stripe.com/test_business_agency",
+        "short": "Premium black neon gradient theme for agencies.",
+        "description": "A stunning black neon gradient theme perfect for creative agencies. Features hero section, services showcase, testimonials, and call-to-action sections with smooth scroll-triggered animations and sticky navigation."
+      },
+      {
+        "id": "business-startup",
+        "title": "Business Startup Template",
+        "type": "paid",
+        "theme": "black-white",
+        "price": 29,
+        "tags": ["HTML", "CSS", "JavaScript", "SaaS", "Startup"],
+        "preview": "/images/business-startup.jpg",
+        "demo": "templates/business-startup/index.html",
+        "buyLink": "https://buy.stripe.com/test_business_startup",
+        "short": "Modern SaaS layout with pricing and FAQ sections.",
+        "description": "A clean black and white contrast theme designed for SaaS startups. Includes hero section, pricing tables, FAQ accordion, and mobile-responsive menu. Perfect for tech companies launching their product."
+      },
+      {
+        "id": "business-portfolio",
+        "title": "Business Portfolio Template",
+        "type": "free",
+        "theme": "white",
+        "price": 0,
+        "tags": ["HTML", "CSS", "JavaScript", "Portfolio", "Free"],
+        "preview": "/images/business-portfolio.jpg",
+        "demo": "templates/business-portfolio/index.html",
+        "buyLink": "",
+        "short": "Minimal white design perfect for portfolios.",
+        "description": "A beautiful minimal white design template for showcasing your work. Features hero section, project gallery with modal view, and contact form with validation. Clean and professional."
+      },
+      {
+        "id": "callcenter-support",
+        "title": "Call Center Support Template",
+        "type": "paid",
+        "theme": "blue-gradient",
+        "price": 39,
+        "tags": ["HTML", "CSS", "JavaScript", "Call Center", "Support"],
+        "preview": "/images/callcenter-support.jpg",
+        "demo": "templates/callcenter-support/index.html",
+        "buyLink": "https://buy.stripe.com/test_callcenter_support",
+        "short": "Blue gradient theme for support centers.",
+        "description": "A professional blue gradient background theme (#0b132b → #1c2541) designed for call centers and support teams. Features hero section, service features, team showcase, and animated floating chat button."
+      },
+      {
+        "id": "ecommerce-premium",
+        "title": "E-Commerce Premium Template",
+        "type": "paid",
+        "theme": "black",
+        "price": 39,
+        "tags": ["HTML", "CSS", "JavaScript", "Ecommerce", "Fashion"],
+        "preview": "/images/ecommerce-premium.jpg",
+        "demo": "templates/ecommerce-premium/index.html",
+        "buyLink": "https://buy.stripe.com/test_ecommerce",
+        "short": "Premium dark eCommerce landing page.",
+        "description": "A luxury black eCommerce template with fashion-style design. Features hero banner, product grid with hover zoom effects, add-to-cart animations, cart modal, and clean bold typography with subtle gradients."
+      },
+      {
+        "id": "ecommerce-luxury",
+        "title": "E-Commerce Luxury Template",
+        "type": "paid",
+        "theme": "black",
+        "price": 30,
+        "tags": ["HTML", "CSS", "JavaScript", "Ecommerce", "Luxury", "Premium"],
+        "preview": "/images/ecommerce-luxury.jpg",
+        "demo": "templates/ecommerce-luxury/index.html",
+        "buyLink": "https://buy.stripe.com/test_ecommerce_luxury",
+        "short": "Premium black theme with cursor down effect and enhanced visuals.",
+        "description": "A stunning black eCommerce template with enhanced visuals, animated gradient orbs, cursor down scroll indicator, product collections, shopping cart functionality, and smooth animations. Perfect for luxury brands."
+      },
+      {
+        "id": "aesthetic-cafe",
+        "title": "Aesthetic Café Template",
+        "type": "paid",
+        "theme": "warm",
+        "price": 35,
+        "tags": ["HTML", "CSS", "JavaScript", "Café", "Aesthetic", "Restaurant", "Premium"],
+        "preview": "/images/aesthetic-cafe.jpg",
+        "demo": "templates/aesthetic-cafe/index.html",
+        "buyLink": "https://buy.stripe.com/test_aesthetic_cafe",
+        "short": "Warm, cozy, modern aesthetic café theme with Pinterest-like vibes.",
+        "description": "A beautifully designed aesthetic café template featuring warm earthy tones (cream beige, soft brown, pastel rose, sage green), elegant serif typography, smooth parallax hero, menu showcase, about page with storytelling layout, and minimal contact form. Perfect for cafés, coffee shops, and restaurants seeking a premium, trendy aesthetic."
+      },
+      {
+        "id": "law-firm",
+        "title": "Law Firm Template",
+        "type": "paid",
+        "theme": "corporate",
+        "price": 45,
+        "tags": ["HTML", "CSS", "JavaScript", "Law Firm", "Legal", "Corporate", "Premium"],
+        "preview": "/images/law-firm.jpg",
+        "demo": "templates/law-firm/index.html",
+        "buyLink": "https://buy.stripe.com/test_law_firm",
+        "short": "Modern, trustworthy, elegant law firm website with corporate design.",
+        "description": "A premium law firm website template featuring deep navy and gold accents, elegant serif typography, hero section with justice-themed imagery, comprehensive services pages, attorney profiles, testimonials slider, awards carousel, firm history timeline, and professional contact form. Perfect for high-end law firms seeking an authoritative, trustworthy, and clean corporate presence."
+      },
+      {
+        "id": "digital-marketing",
+        "title": "Digital Marketing Agency Template",
+        "type": "paid",
+        "theme": "futuristic",
+        "price": 40,
+        "tags": ["HTML", "CSS", "JavaScript", "Digital Marketing", "Agency", "Futuristic", "High-Tech", "Premium"],
+        "preview": "/images/digital-marketing.jpg",
+        "demo": "templates/digital-marketing/index.html",
+        "buyLink": "https://buy.stripe.com/test_digital_marketing",
+        "short": "High-tech, futuristic digital marketing agency template with neon accents.",
+        "description": "A cutting-edge digital marketing agency template featuring futuristic high-tech design with neon accents (electric blue, purple, cyan), dark backgrounds, smooth gradients, animated hero section with gradient mesh and particles, services grid, case studies slider, testimonials, portfolio with filtering, and professional contact form. Perfect for digital marketing agencies seeking a premium, visually striking, and modern online presence."
+      }
+    ];
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

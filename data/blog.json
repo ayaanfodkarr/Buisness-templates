@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "getting-started-with-website-templates",
+    "title": "Getting Started with Website Templates",
+    "excerpt": "Learn how to choose and customize the perfect website template for your business.",
+    "date": "January 15, 2024",
+    "tags": ["Templates", "Web Design", "Beginner"],
+    "content": "Website templates are a great way to get your business online quickly. In this guide, we'll walk you through choosing the right template and customizing it to match your brand.\n\nFirst, consider your business needs. Are you looking for an e-commerce site, a portfolio, or a business landing page?\n\nNext, think about your brand identity. Choose colors and styles that reflect your business values.\n\nFinally, customize the template with your content, images, and branding."
+  },
+  {
+    "slug": "responsive-design-best-practices",
+    "title": "Responsive Design Best Practices",
+    "excerpt": "Essential tips for creating websites that look great on all devices.",
+    "date": "January 20, 2024",
+    "tags": ["Responsive Design", "Mobile", "UX"],
+    "content": "Responsive design is crucial in today's mobile-first world. Here are some best practices:\n\n1. Use flexible grid layouts\n2. Optimize images for different screen sizes\n3. Test on multiple devices\n4. Consider touch interactions\n5. Keep navigation simple and accessible"
+  },
+  {
+    "slug": "optimizing-website-performance",
+    "title": "Optimizing Website Performance",
+    "excerpt": "Speed up your website with these performance optimization techniques.",
+    "date": "January 25, 2024",
+    "tags": ["Performance", "SEO", "Optimization"],
+    "content": "Website performance directly impacts user experience and SEO rankings. Here are key optimization strategies:\n\n- Minimize HTTP requests\n- Optimize images\n- Use browser caching\n- Minify CSS and JavaScript\n- Enable compression\n- Use a CDN for static assets"
+  }
+]

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post - TemplateHub</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="shortcut icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Scroll Gradient Overlay -->
+  <div class="scroll-gradient-overlay" id="scroll-overlay"></div>
+  
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-content">
+        <a href="index.html" class="nav-logo text-gradient">
+          <img src="assets/logo.png" alt="TemplateHub Logo" class="nav-logo-img">
+          <span>TemplateHub</span>
+        </a>
+        
+        <div class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="index.html#templates">Templates</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <div class="theme-toggle">
+            <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Theme switcher">
+              <span id="theme-icon">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                </svg>
+              </span>
+              <span id="theme-text">Dark</span>
+              <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="theme-toggle-menu" id="theme-menu">
+              <div class="theme-option" data-theme="light">
+                <span class="theme-option-icon">
+                  <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                  </svg>
+                </span>
+                <span>Bright</span>
+              </div>
+              <div class="theme-option" data-theme="dark">
+                <span class="theme-option-icon">
+                  <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                  </svg>
+                </span>
+                <span>Dark</span>
+              </div>
+            </div>
+          </div>
+          <a href="index.html#bundle" class="nav-btn">Bundle Deal</a>
+        </div>
+        
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="index.html#templates">Templates</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <div class="theme-toggle" style="margin: 1rem 0;">
+          <button class="theme-toggle-btn" id="theme-toggle-btn-mobile" aria-label="Theme switcher" style="width: 100%; justify-content: center;">
+            <span id="theme-icon-mobile">
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+              </svg>
+            </span>
+            <span id="theme-text-mobile">Dark</span>
+            <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="theme-toggle-menu" id="theme-menu-mobile" style="position: relative; top: 0; left: 0; right: 0; margin-top: 0.5rem;">
+            <div class="theme-option" data-theme="light">
+              <span class="theme-option-icon">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </span>
+              <span>Bright</span>
+            </div>
+            <div class="theme-option" data-theme="dark">
+              <span class="theme-option-icon">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                </svg>
+              </span>
+              <span>Dark</span>
+            </div>
+          </div>
+        </div>
+        <a href="index.html#bundle" class="nav-btn" style="display: block; text-align: center; margin-top: 1rem;">Bundle Deal</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="blog-post-page">
+    <div class="blog-post-container">
+      <!-- Loading State -->
+      <div id="blog-post-loading" class="loading">
+        <div class="spinner"></div>
+        <p style="margin-top: 1rem; color: var(--gray-400);">Loading blog post...</p>
+      </div>
+
+      <!-- Error State -->
+      <div id="blog-post-error" class="error" style="display: none;">
+        <h1 class="text-gradient">Post Not Found</h1>
+        <a href="blog.html" class="btn-primary" style="display: inline-block; margin-top: 1rem;">← Back to Blog</a>
+      </div>
+
+      <!-- Blog Post Container -->
+      <div id="blog-post-container" style="display: none;"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3 class="text-gradient">TemplateHub</h3>
+          <p>Premium website templates for modern businesses. Start your online presence today.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Templates</h4>
+          <ul>
+            <li><a href="template-detail.html?id=business-agency">Business Agency</a></li>
+            <li><a href="template-detail.html?id=business-startup">Business Startup</a></li>
+            <li><a href="template-detail.html?id=ecommerce-premium">E-Commerce</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#bundle">Bundle Deal</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">License</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> TemplateHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Blog Data (works without server) -->
+  <script>
+    window.blogData = [
+      {
+        "slug": "getting-started-with-website-templates",
+        "title": "Getting Started with Website Templates",
+        "excerpt": "Learn how to choose and customize the perfect website template for your business.",
+        "date": "January 15, 2024",
+        "tags": ["Templates", "Web Design", "Beginner"],
+        "content": "Website templates are a great way to get your business online quickly. In this guide, we'll walk you through choosing the right template and customizing it to match your brand.\n\nFirst, consider your business needs. Are you looking for an e-commerce site, a portfolio, or a business landing page?\n\nNext, think about your brand identity. Choose colors and styles that reflect your business values.\n\nFinally, customize the template with your content, images, and branding."
+      },
+      {
+        "slug": "responsive-design-best-practices",
+        "title": "Responsive Design Best Practices",
+        "excerpt": "Essential tips for creating websites that look great on all devices.",
+        "date": "January 20, 2024",
+        "tags": ["Responsive Design", "Mobile", "UX"],
+        "content": "Responsive design is crucial in today's mobile-first world. Here are some best practices:\n\n1. Use flexible grid layouts\n2. Optimize images for different screen sizes\n3. Test on multiple devices\n4. Consider touch interactions\n5. Keep navigation simple and accessible"
+      },
+      {
+        "slug": "optimizing-website-performance",
+        "title": "Optimizing Website Performance",
+        "excerpt": "Speed up your website with these performance optimization techniques.",
+        "date": "January 25, 2024",
+        "tags": ["Performance", "SEO", "Optimization"],
+        "content": "Website performance directly impacts user experience and SEO rankings. Here are key optimization strategies:\n\n- Minimize HTTP requests\n- Optimize images\n- Use browser caching\n- Minify CSS and JavaScript\n- Enable compression\n- Use a CDN for static assets"
+      }
+    ];
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

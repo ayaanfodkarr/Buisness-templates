@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template Detail - TemplateHub</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="shortcut icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-content">
+        <a href="index.html" class="nav-logo text-gradient">
+          <img src="assets/logo.png" alt="TemplateHub Logo" class="nav-logo-img">
+          <span>TemplateHub</span>
+        </a>
+        
+        <div class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="index.html#templates">Templates</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="index.html#bundle" class="nav-btn">Bundle Deal</a>
+        </div>
+        
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="index.html#templates">Templates</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html#bundle" class="nav-btn" style="display: block; text-align: center; margin-top: 1rem;">Bundle Deal</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="template-detail-page">
+    <div class="template-detail-container">
+      <!-- Loading State -->
+      <div id="template-detail-loading" class="loading">
+        <div class="spinner"></div>
+        <p style="margin-top: 1rem; color: var(--gray-400);">Loading template...</p>
+      </div>
+
+      <!-- Error State -->
+      <div id="template-detail-error" class="error" style="display: none;">
+        <h1 class="text-gradient">Template Not Found</h1>
+        <a href="index.html" class="btn-primary" style="display: inline-block; margin-top: 1rem;">← Back to Home</a>
+      </div>
+
+      <!-- Template Detail Container -->
+      <div id="template-detail-container" style="display: none;"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3 class="text-gradient">TemplateHub</h3>
+          <p>Premium website templates for modern businesses. Start your online presence today.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Templates</h4>
+          <ul>
+            <li><a href="template-detail.html?id=business-agency">Business Agency</a></li>
+            <li><a href="template-detail.html?id=business-startup">Business Startup</a></li>
+            <li><a href="template-detail.html?id=ecommerce-premium">E-Commerce</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#bundle">Bundle Deal</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">License</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> TemplateHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Templates Data (works without server) -->
+  <script>
+    window.templatesData = [
+      {
+        "id": "business-agency",
+        "title": "Business Agency Template",
+        "type": "paid",
+        "theme": "black",
+        "price": 29,
+        "tags": ["HTML", "CSS", "JavaScript", "Business", "Agency"],
+        "preview": "/images/business-agency.jpg",
+        "demo": "templates/business-agency/index.html",
+        "buyLink": "https://buy.stripe.com/test_business_agency",
+        "short": "Premium black neon gradient theme for agencies.",
+        "description": "A stunning black neon gradient theme perfect for creative agencies. Features hero section, services showcase, testimonials, and call-to-action sections with smooth scroll-triggered animations and sticky navigation."
+      },
+      {
+        "id": "business-startup",
+        "title": "Business Startup Template",
+        "type": "paid",
+        "theme": "black-white",
+        "price": 29,
+        "tags": ["HTML", "CSS", "JavaScript", "SaaS", "Startup"],
+        "preview": "/images/business-startup.jpg",
+        "demo": "templates/business-startup/index.html",
+        "buyLink": "https://buy.stripe.com/test_business_startup",
+        "short": "Modern SaaS layout with pricing and FAQ sections.",
+        "description": "A clean black and white contrast theme designed for SaaS startups. Includes hero section, pricing tables, FAQ accordion, and mobile-responsive menu. Perfect for tech companies launching their product."
+      },
+      {
+        "id": "business-portfolio",
+        "title": "Business Portfolio Template",
+        "type": "free",
+        "theme": "white",
+        "price": 0,
+        "tags": ["HTML", "CSS", "JavaScript", "Portfolio", "Free"],
+        "preview": "/images/business-portfolio.jpg",
+        "demo": "templates/business-portfolio/index.html",
+        "buyLink": "",
+        "short": "Minimal white design perfect for portfolios.",
+        "description": "A beautiful minimal white design template for showcasing your work. Features hero section, project gallery with modal view, and contact form with validation. Clean and professional."
+      },
+      {
+        "id": "callcenter-support",
+        "title": "Call Center Support Template",
+        "type": "paid",
+        "theme": "blue-gradient",
+        "price": 39,
+        "tags": ["HTML", "CSS", "JavaScript", "Call Center", "Support"],
+        "preview": "/images/callcenter-support.jpg",
+        "demo": "templates/callcenter-support/index.html",
+        "buyLink": "https://buy.stripe.com/test_callcenter_support",
+        "short": "Blue gradient theme for support centers.",
+        "description": "A professional blue gradient background theme (#0b132b → #1c2541) designed for call centers and support teams. Features hero section, service features, team showcase, and animated floating chat button."
+      },
+      {
+        "id": "ecommerce-premium",
+        "title": "E-Commerce Premium Template",
+        "type": "paid",
+        "theme": "black",
+        "price": 39,
+        "tags": ["HTML", "CSS", "JavaScript", "Ecommerce", "Fashion"],
+        "preview": "/images/ecommerce-premium.jpg",
+        "demo": "templates/ecommerce-premium/index.html",
+        "buyLink": "https://buy.stripe.com/test_ecommerce",
+        "short": "Premium dark eCommerce landing page.",
+        "description": "A luxury black eCommerce template with fashion-style design. Features hero banner, product grid with hover zoom effects, add-to-cart animations, cart modal, and clean bold typography with subtle gradients."
+      },
+      {
+        "id": "ecommerce-luxury",
+        "title": "E-Commerce Luxury Template",
+        "type": "paid",
+        "theme": "black",
+        "price": 30,
+        "tags": ["HTML", "CSS", "JavaScript", "Ecommerce", "Luxury", "Premium"],
+        "preview": "/images/ecommerce-luxury.jpg",
+        "demo": "templates/ecommerce-luxury/index.html",
+        "buyLink": "https://buy.stripe.com/test_ecommerce_luxury",
+        "short": "Premium black theme with cursor down effect and enhanced visuals.",
+        "description": "A stunning black eCommerce template with enhanced visuals, animated gradient orbs, cursor down scroll indicator, product collections, shopping cart functionality, and smooth animations. Perfect for luxury brands."
+      },
+      {
+        "id": "aesthetic-cafe",
+        "title": "Aesthetic Café Template",
+        "type": "paid",
+        "theme": "warm",
+        "price": 35,
+        "tags": ["HTML", "CSS", "JavaScript", "Café", "Aesthetic", "Restaurant", "Premium"],
+        "preview": "/images/aesthetic-cafe.jpg",
+        "demo": "templates/aesthetic-cafe/index.html",
+        "buyLink": "https://buy.stripe.com/test_aesthetic_cafe",
+        "short": "Warm, cozy, modern aesthetic café theme with Pinterest-like vibes.",
+        "description": "A beautifully designed aesthetic café template featuring warm earthy tones (cream beige, soft brown, pastel rose, sage green), elegant serif typography, smooth parallax hero, menu showcase, about page with storytelling layout, and minimal contact form. Perfect for cafés, coffee shops, and restaurants seeking a premium, trendy aesthetic."
+      },
+      {
+        "id": "law-firm",
+        "title": "Law Firm Template",
+        "type": "paid",
+        "theme": "corporate",
+        "price": 45,
+        "tags": ["HTML", "CSS", "JavaScript", "Law Firm", "Legal", "Corporate", "Premium"],
+        "preview": "/images/law-firm.jpg",
+        "demo": "templates/law-firm/index.html",
+        "buyLink": "https://buy.stripe.com/test_law_firm",
+        "short": "Modern, trustworthy, elegant law firm website with corporate design.",
+        "description": "A premium law firm website template featuring deep navy and gold accents, elegant serif typography, hero section with justice-themed imagery, comprehensive services pages, attorney profiles, testimonials slider, awards carousel, firm history timeline, and professional contact form. Perfect for high-end law firms seeking an authoritative, trustworthy, and clean corporate presence."
+      },
+      {
+        "id": "digital-marketing",
+        "title": "Digital Marketing Agency Template",
+        "type": "paid",
+        "theme": "futuristic",
+        "price": 40,
+        "tags": ["HTML", "CSS", "JavaScript", "Digital Marketing", "Agency", "Futuristic", "High-Tech", "Premium"],
+        "preview": "/images/digital-marketing.jpg",
+        "demo": "templates/digital-marketing/index.html",
+        "buyLink": "https://buy.stripe.com/test_digital_marketing",
+        "short": "High-tech, futuristic digital marketing agency template with neon accents.",
+        "description": "A cutting-edge digital marketing agency template featuring futuristic high-tech design with neon accents (electric blue, purple, cyan), dark backgrounds, smooth gradients, animated hero section with gradient mesh and particles, services grid, case studies slider, testimonials, portfolio with filtering, and professional contact form. Perfect for digital marketing agencies seeking a premium, visually striking, and modern online presence."
+      }
+    ];
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
